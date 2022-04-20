@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Hello Bulma!</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css" />
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <main>
+    <div class="form" id="form">
+      <div class="field">
+        <label class="label">Teljes név</label>
+        <div class="control has-icons-left has-icons-right">
+          <input
+            class="input"
+            type="text"
+            placeholder="Text input"
+            value="Név"
+            id="nameEntry"
+          />
+          <span class="icon is-small is-left">
+            <i class="fas fa-user"></i>
+          </span>
+        </div>
+      </div>
+
+      <div class="field">
+        <label class="label">Email cím</label>
+        <div class="control has-icons-left has-icons-right">
+          <input
+            class="input"
+            type="email"
+            placeholder="Email input"
+            value="E-mail"
+            id="emailEntry"
+          />
+          <span class="icon is-small is-left">
+            <i class="fas fa-envelope"></i>
+          </span>
+      </div>
+      <div class="field">
+        <label class="label">Neptun Kód</label>
+        <div class="control has-icons-left">
+          <span class="icon is-small is-left">
+            <i class="fas fa-key"></i>
+          </span>
+          <input class="input" type="text" value="Neptun kód" id="neptunEntry"/>
+        </div>
+      </div>
+      <div class="field">
+        <label class="label">Edzés Kód</label>
+        <div class="control has-icons-left">
+          <span class="icon is-small is-left">
+            <i class="fas fa-key"></i>
+          </span>
+          <input class="input" type="text" value="Edzés kód" id="kodEntry"/>
+        </div>
+      </div>
+      <div class="field">
+        <div class="control">
+          <label class="checkbox survey-label">
+            <input type="checkbox" id="validityEntry" />
+            Elfogadom hogyha nem jelenek meg az edzésen,<br />
+            és nem jelentkezek le akár végleges kitiltással is járhat.
+          </label>
+        </div>
+      </div>
+      <div class="field is-grouped is-grouped-centered">
+        <p class="control">
+          <a class="button is-success" onclick="checkEntry()"> Jelentkezés </a>
+        </p>
+        <p class="control"><a class="button is-info js-modal-trigger" id="AppliesModal" data-target="modal-js-example" onclick="openModal()">
+          Jelentkezők
+        </a></p>
+      </div>
+      <p class="control">
+        <a class="button is-light" onclick="returnMainSite()"> Mégse </a>
+      </p>
+    </div>
+    <div id="modal-js-example" class="modal">
+      <div class="modal-background"></div>
+      
+      <div class="modal-content">
+        <div class="box">
+          <table class="table is-fullwidth">
+            <thead>
+              <tr><th>Név</th>
+                <th>Jelentkezés állapota</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Megyeri Kenéz</td>
+                <td><span class="icon">
+                  <i class="fas fa-check"></i>
+                </span></td>
+              </tr>
+            </tbody>
+            <tfoot></tfoot>
+          </table>
+        </div>
+      </div>
+      <button class="modal-close is-large" aria-label="close" onclick="closeModal()"></button>
+    </div>
+  </main>
+  </body>
+</html>
+  

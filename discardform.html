@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Hello Bulma!</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css" />
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <main>
+    <div class="form" id="form">
+      <div class="field">
+        <label class="label">Email cím</label>
+        <div class="control has-icons-left has-icons-right">
+          <input
+            class="input"
+            type="email"
+            placeholder="Email input"
+            value="E-mail"
+            id="emailEntry"
+          />
+          <span class="icon is-small is-left">
+            <i class="fas fa-envelope"></i>
+          </span>
+      </div>
+      <div class="field">
+        <label class="label">Neptun Kód</label>
+        <div class="control has-icons-left">
+          <span class="icon is-small is-left">
+            <i class="fas fa-key"></i>
+          </span>
+          <input class="input" type="text" value="Neptun kód" id="neptunEntry"/>
+        </div>
+      </div>
+      <div class="field">
+        <label class="label">Edzés Kód</label>
+        <div class="control has-icons-left">
+          <span class="icon is-small is-left">
+            <i class="fas fa-key"></i>
+          </span>
+          <input class="input" type="text" value="Edzés kód" id="kodEntry"/>
+        </div>
+      </div>
+      <div class="field is-grouped is-grouped-centered">
+        <p class="control">
+          <a class="button is-success" onclick="discardEntry()"> Lejelentkezés </a>
+        </p>
+        <p class="control">
+          <a class="button is-light" onclick="returnMainSite()"> Mégse </a>
+        </p>
+      </div>
+    </div>
+  </main>
+  </body>
+</html>
+  

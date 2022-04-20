@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Röplabda Pannon - Egyetem</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css" />
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+    <script src="script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  </head>
+  <body>
+    <main class="section" id="main">
+      <div class="container" id="container">
+        <div class="columns">
+          <div class="column">
+            <div class="card" id="column-1">
+              <div class="card-image">
+                <figure class="image is-4by3">
+                  <img src="1280x960.jpg" alt="Placeholder image" />
+                </figure>
+              </div>
+              <div class="card-content">
+                <div class="media">
+                  <div class="media-content">
+                    <p class="title is-4">Kezdő röplabda edzés</p>
+                  </div>
+                </div>
+
+                <div class="content">
+                  Még nem röpiztél? Esetleg párszor a barátokkal? Ez a te helyed!
+                  <strong>Garantált a jó hangulat,folyamatos játékkal!</strong>
+                  <br />
+                  <br />
+                  <div class="has-text-centered">
+                    <button class="button is-primary" onclick="applyToTrainingStarter('container')">
+                      Jelentkezés
+                    </button>
+                    <button class="button is-danger" onclick="createDeclineForm('container')">
+                      Lejelentkezés
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="column">
+            <div class="card" id="column-2">
+              <div class="card-image">
+                <figure class="image is-4by3">
+                  <img src="1280x960_2.jpg" alt="Placeholder image" />
+                </figure>
+              </div>
+              <div class="card-content">
+                <div class="media">
+                  <div class="media-content">
+                    <p class="title is-4">Haladó röplabda edzés</p>
+                  </div>
+                </div>
+
+                <div class="content">
+                  Már egy ideje röpizel és szeretned új szintre emelni a képességeidet?
+                  <strong>Gyere el és mutasdd meg mit tudsz!</strong>
+                  <br />
+                  <br />
+                  <div class="has-text-centered">
+                    <button
+                      class="button is-primary"
+                      onclick="applyToTrainingAdvanced('container')"
+                    >
+                      Jelentkezés
+                    </button>
+                    <button class="button is-danger" onclick="createDeclineForm('container')">
+                      Lejelentkezés
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
