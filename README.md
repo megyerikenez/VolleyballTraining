@@ -7,5 +7,7 @@ If you have any questions,or advice let me know.
 The backend is written in ASP.NET,i wrote the frontend however the backend is written by one of my good friends.
 For data storing we use PostgreSQL.
 
+FOR RUNNING THE SITE YOU NEED XAMPP OR LIVE SERVER!!!
+
 In this repo you can find the frontend code, I use Bulma (css framework) and HTML,JS with some JQuery.
 #Have a fantastic day!
